@@ -13,6 +13,7 @@ class Solution:
         for jewel in J:
             #If one of my jewels is a stone
             if jewel in hashMap:
+                #The stone IS a jewel, how many are there?
                 result += hashMap[jewel]
         return result
 
