@@ -8,6 +8,7 @@ class Solution:
             else:
                 someHash[number] += 1
 
+        #Largest value has been obtained, but you want the Key to this Value
         resultValue = max(someHash.values())
         for key in someHash:
             if someHash[key] == resultValue:
