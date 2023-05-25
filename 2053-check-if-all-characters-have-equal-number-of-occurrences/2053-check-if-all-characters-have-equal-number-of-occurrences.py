@@ -8,7 +8,7 @@ class Solution:
             else:
                 hashMap[letter] += 1
 
-        #Make hashMap.keys() into a set. If the len(set) != hashMap.keys(), it must false
+        #Make hashMap.keys() into a set. If the len(set) > 1, it implies difference # of occurences
         valueSet = set(hashMap.values())
         if len(valueSet) == 1:
             return True
