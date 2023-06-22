@@ -15,6 +15,7 @@ class Solution:
         #go through the hashmap and if its a lucky number, set result to that
         for i in someHash:
             print(i, someHash[i])
+            #Need to 'remember' the greatest result and not overwrite it 
             if i == someHash[i] and i > result:
                 result = i
                 
